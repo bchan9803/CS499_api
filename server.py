@@ -27,9 +27,9 @@ def fetch_ECMap():
     return jsonify(data)
 
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
     # use port 8000 for the server in order to work
     # app.run(port=8000, debug=True)
 
-    port = int(os.environ.get("PORT", 10000))
-    app.run(host="0.0.0.0", port=port, debug=True)
+port = int(os.environ.get("PORT", 10000))
+app.run(host="0.0.0.0", port=port, debug=True)
